@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Navbar from "../components/Navbar";
 
 import "./mainLayout.scss";
+import Footer from "../components/Footer";
 
 const MainLayout = ({ children }) => {
   return (
@@ -11,9 +12,9 @@ const MainLayout = ({ children }) => {
       <div className="wrapper">
         <Navbar />
         <div className="main-container">
-          {/* <div className="wrapper-content">{children}</div> */}
-          {children}
+          <div className="wrapper-content">{children}</div>
         </div>
+        <Footer />
       </div>
     </>
   );

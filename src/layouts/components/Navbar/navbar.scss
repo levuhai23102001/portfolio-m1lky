@@ -37,7 +37,7 @@
     height: 100%;
     width: 6px;
     background-color: #000;
-    transform: skew(39deg);
+    transform: skew(38.5deg);
   }
   &::after {
     content: "";
@@ -47,7 +47,7 @@
     height: 100%;
     width: 6px;
     background-color: #000;
-    transform: skew(-39deg);
+    transform: skew(-38.5deg);
   }
   &__name {
     position: relative;

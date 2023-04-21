@@ -3,11 +3,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { myRoutes } from "./routes/routes";
 import MainLayout from "./layouts/MainLayout";
 import "./App.scss";
+import StarsCanvas from "./layouts/components/Stars/";
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <StarsCanvas />
         <Routes>
           {myRoutes.map((route, index) => {
             const Page = route.component;

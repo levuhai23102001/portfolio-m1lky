@@ -4,20 +4,18 @@
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background-color: #000;
   overflow: hidden;
 }
 
 .main-container {
-  //   display: flex;
-  //   flex-grow: 1;
-  width: 1028px;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   margin-top: 66px;
   padding: 0;
   overflow: hidden;
 }
 
-// .wrapper-content {
-//   flex: 1;
-// }
+.wrapper-content {
+  max-width: 1170px;
+  margin: 0 auto;
+}
