@@ -51,7 +51,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="hero hero-banner" id="main">
+    <section className="hero hero-banner" id="main">
       <div className="hero-content">
         <span className="hero-content__tagline">Welcome to my Portfolio</span>
         <h1 className="hero-content__title">
@@ -82,7 +82,7 @@ const Hero = () => {
         </Canvas>
         <img src={astronaut} alt="astronaut" />
       </div>
-    </div>
+    </section>
   );
 };
 

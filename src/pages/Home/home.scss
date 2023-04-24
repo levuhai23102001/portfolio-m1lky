@@ -33,8 +33,14 @@
   bottom: 2rem;
   z-index: 1;
   left: 50%;
+  opacity: 1;
+  transition: opacity 0.3s linear;
   transform: translateX(-50%);
   animation: bounce 3s ease infinite;
+  &.hide {
+    opacity: 0;
+    transition: 0.3s linear;
+  }
 }
 
 @keyframes bounce {
@@ -47,4 +53,9 @@
   100% {
     transform: translateX(-50%) translateY(0);
   }
+}
+
+.space {
+  width: 100%;
+  height: 100vh;
 }

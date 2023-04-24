@@ -1,7 +1,8 @@
 import React from "react";
 
 import { Link } from "react-scroll";
-import { Link as SocialLink, NavLink } from "react-router-dom";
+
+import { Link as SocialLink } from "react-router-dom";
 
 import {
   DiscordIcon,
@@ -48,29 +49,54 @@ const Navbar = () => {
         <div className="navbar-wrapper">
           <ul className="navbar-menu">
             <li className="navbar-menu__item">
-              <NavLink to="#main" className="navbar-menu__item--link">
+              <Link
+                to="main"
+                spy
+                activeClass="active"
+                className="navbar-menu__item--link"
+              >
                 Home
-              </NavLink>
+              </Link>
             </li>
             <li className="navbar-menu__item">
-              <NavLink to="#about" className="navbar-menu__item--link">
+              <Link
+                to="about"
+                spy
+                activeClass="active"
+                className="navbar-menu__item--link"
+              >
                 About
-              </NavLink>
+              </Link>
             </li>
             <li className="navbar-menu__item">
-              <NavLink to="#projects" className="navbar-menu__item--link">
+              <Link
+                to="projects"
+                spy
+                activeClass="active"
+                className="navbar-menu__item--link"
+              >
                 Projects
-              </NavLink>
+              </Link>
             </li>
             <li className="navbar-menu__item">
-              <NavLink to="#skills" className="navbar-menu__item--link">
+              <Link
+                to="skills"
+                spy
+                activeClass="active"
+                className="navbar-menu__item--link"
+              >
                 Skills
-              </NavLink>
+              </Link>
             </li>
             <li className="navbar-menu__item">
-              <NavLink to="#contact" className="navbar-menu__item--link">
+              <Link
+                to="contact"
+                spy
+                activeClass="active"
+                className="navbar-menu__item--link"
+              >
                 Contact
-              </NavLink>
+              </Link>
             </li>
           </ul>
           <div className="navbar-brand">

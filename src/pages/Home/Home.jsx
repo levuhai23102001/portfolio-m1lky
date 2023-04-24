@@ -7,8 +7,8 @@ import Contact from "./home-section/Contact";
 import Skills from "./home-section/Skills";
 import Footer from "../../layouts/components/Footer";
 import { ArrowLeftIcon, ArrowRightIcon } from "../../components/Icons";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Mousewheel } from "swiper";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { EffectFade, Mousewheel, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
@@ -17,24 +17,24 @@ import "./home.scss";
 
 const sections = [
   {
-    id: 1,
+    id: "main",
     component: <Hero />,
   },
   {
-    id: 2,
+    id: "about",
     component: <About />,
   },
   {
-    id: 3,
+    id: "projects",
     component: <Projects />,
   },
   {
-    id: 4,
-    component: <Contact />,
+    id: "skills",
+    component: <Skills />,
   },
   {
-    id: 5,
-    component: <Skills />,
+    id: "contact",
+    component: <Contact />,
   },
 ];
 
@@ -90,23 +90,21 @@ const Home = () => {
             }}
             speed={1000}
             mousewheel={true}
-            modules={[EffectFade, Mousewheel]}
+            modules={[EffectFade, Mousewheel, Pagination]}
             className="mySwiper"
           >
             {sections.map((section, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} id={section.id}>
                 <div className="wrapper-content">{section.component}</div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
 
-        {showScrollRight && (
-          <div className="scroll">
-            <span>Scroll to see effect</span>
-            <ArrowRightIcon />
-          </div>
-        )}
+        <div className={showScrollRight ? "scroll" : "scroll hide"}>
+          <span>Scroll to see effect</span>
+          <ArrowRightIcon />
+        </div>
 
         <Footer current={`0${activeSection}`} pages={`0${sections.length}`} />
       </div>

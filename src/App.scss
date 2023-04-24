@@ -1,3 +1,5 @@
+@use "./scss/" as *;
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -13,7 +15,8 @@ body {
 
 body {
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: $main-fontFamily;
+  font-family: $second-fontFamily;
   font-size: 14px;
   font-weight: 400;
   background-color: #000;
