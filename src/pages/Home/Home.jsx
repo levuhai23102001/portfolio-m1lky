@@ -108,7 +108,7 @@ const Home = () => {
           </div>
         )}
 
-        <Footer current={activeSection} pages={sections.length} />
+        <Footer current={`0${activeSection}`} pages={`0${sections.length}`} />
       </div>
     </>
   );
