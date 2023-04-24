@@ -1,5 +1,7 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+
+import { Link } from "react-scroll";
+import { Link as SocialLink, NavLink } from "react-router-dom";
 
 import {
   DiscordIcon,
@@ -46,22 +48,27 @@ const Navbar = () => {
         <div className="navbar-wrapper">
           <ul className="navbar-menu">
             <li className="navbar-menu__item">
-              <NavLink to="/" className="navbar-menu__item--link">
+              <NavLink to="#main" className="navbar-menu__item--link">
                 Home
               </NavLink>
             </li>
             <li className="navbar-menu__item">
-              <NavLink to="/about" className="navbar-menu__item--link">
+              <NavLink to="#about" className="navbar-menu__item--link">
                 About
               </NavLink>
             </li>
             <li className="navbar-menu__item">
-              <NavLink to="/projects" className="navbar-menu__item--link">
+              <NavLink to="#projects" className="navbar-menu__item--link">
                 Projects
               </NavLink>
             </li>
             <li className="navbar-menu__item">
-              <NavLink to="/contact" className="navbar-menu__item--link">
+              <NavLink to="#skills" className="navbar-menu__item--link">
+                Skills
+              </NavLink>
+            </li>
+            <li className="navbar-menu__item">
+              <NavLink to="#contact" className="navbar-menu__item--link">
                 Contact
               </NavLink>
             </li>
@@ -74,7 +81,7 @@ const Navbar = () => {
           <ul className="social-menu">
             {socialLinks.map((item, index) => (
               <li key={index} className="social-menu__item">
-                <Link to={item.path}>{item.icon}</Link>
+                <SocialLink to={item.path}>{item.icon}</SocialLink>
               </li>
             ))}
           </ul>
