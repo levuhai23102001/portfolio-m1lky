@@ -1,3 +1,5 @@
+@use "../../../scss/" as *;
+
 .footer {
   width: 100%;
   height: 66px;
@@ -16,8 +18,8 @@
     }
     .divider {
       content: "";
-      background-color: #ffc000;
-      width: 50px;
+      background-color: $third-color;
+      width: 65px;
       margin: 7px 10px;
       height: 1px;
       display: inline-block;

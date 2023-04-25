@@ -17,6 +17,17 @@
   width: 50%;
   background-color: $secondBg-color;
   border-radius: 8px;
+  overflow: hidden;
+}
+
+.contact-content-right {
+  width: 50%;
+  canvas {
+    display: block;
+    width: 100%;
+    height: 660px !important;
+    touch-action: none;
+  }
 }
 
 .contact-header {
@@ -37,7 +48,9 @@
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
+  font-family: $main-fontFamily;
+  font-family: $second-fontFamily;
   &__label {
     display: flex;
     flex-direction: column;

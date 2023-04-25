@@ -1,4 +1,7 @@
 import React, { useRef, useState } from "react";
+
+import { EarthCanvas } from "../../../../components/Canvas";
+
 import "./contact.scss";
 
 const Contact = () => {
@@ -12,7 +15,9 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    setForm(e.target.value);
+  };
 
   const handleSubmit = (e) => {};
 
@@ -23,7 +28,7 @@ const Contact = () => {
           <div className="contact-content-left">
             <div className="contact-header">
               <p className="contact-subtitle">Get in touch</p>
-              <h3 className="contact-title">Contact Me</h3>
+              <h3 className="contact-title">Contact Me.</h3>
             </div>
             <form
               ref={formRef}
@@ -67,6 +72,9 @@ const Contact = () => {
                 {loading ? "Sending..." : "Send"}
               </button>
             </form>
+          </div>
+          <div className="contact-content-right">
+            <EarthCanvas />
           </div>
         </div>
       </section>

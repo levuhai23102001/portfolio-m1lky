@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.scss";
-import StarsCanvas from "./layouts/components/Stars/";
+import { StarsCanvas } from "./components/Canvas";
 import Home from "./pages/Home";
 
 function App() {
