@@ -13,6 +13,18 @@ import {
   TwitterIcon,
 } from "../components/Icons";
 
+import {
+  web,
+  mobile,
+  backend,
+  creator,
+  astro,
+  astroGun,
+  lumbur,
+  pinkbur,
+  whitebur,
+} from "../assets";
+
 export const navLinks = [
   {
     id: "home",
@@ -84,5 +96,24 @@ export const sections = [
   {
     id: "contact",
     component: Contact,
+  },
+];
+
+export const overviewList = [
+  {
+    icon: web,
+    title: "Web Developer",
+  },
+  {
+    icon: mobile,
+    title: "Mobile Developer",
+  },
+  {
+    icon: backend,
+    title: "Fullstack Developer",
+  },
+  {
+    icon: creator,
+    title: "Content Creator",
   },
 ];

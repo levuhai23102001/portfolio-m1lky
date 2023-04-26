@@ -9,7 +9,7 @@ import "./navbar.scss";
 const Navbar = () => {
   //State
   const [isPlay, setIsPlay] = useState(false);
-  //Ref
+  //DOM
   const soundRef = useRef(null);
 
   const handlePlayMusic = () => {

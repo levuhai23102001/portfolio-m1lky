@@ -22,6 +22,7 @@
   opacity: 0 !important;
   &-active {
     opacity: 1 !important;
+    z-index: 999 !important;
   }
 }
 
