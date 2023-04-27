@@ -25,29 +25,6 @@ import {
   whitebur,
 } from "../assets";
 
-export const navLinks = [
-  {
-    id: "home",
-    title: "Home",
-  },
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "skills",
-    title: "Skills",
-  },
-  {
-    id: "projects",
-    title: "Projects",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
-];
-
 export const socialLinks = [
   {
     icon: FacebookIcon,
@@ -115,5 +92,28 @@ export const overviewList = [
   {
     icon: creator,
     title: "Content Creator",
+  },
+];
+
+export const characterList = [
+  {
+    name: "Astro",
+    img: astro,
+  },
+  {
+    name: "AstroGun",
+    img: astroGun,
+  },
+  {
+    name: "Lumbur",
+    img: lumbur,
+  },
+  {
+    name: "White Lumbur",
+    img: whitebur,
+  },
+  {
+    name: "Pink Lumbur",
+    img: pinkbur,
   },
 ];

@@ -8,6 +8,10 @@ import lumbur from "./lumbur.png";
 import pinkbur from "./pinkbur.png";
 import whitebur from "./whitebur.png";
 
+import bgSound from "./mp3/bg-sound.mp3";
+import gone from "./mp3/gone.mp3";
+import exil from "./mp3/exil.mp3";
+
 export {
   web,
   mobile,
@@ -18,4 +22,7 @@ export {
   lumbur,
   pinkbur,
   whitebur,
+  bgSound,
+  gone,
+  exil,
 };

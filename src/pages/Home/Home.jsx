@@ -3,13 +3,16 @@ import Navbar from "../../layouts/components/Navbar";
 import Footer from "../../layouts/components/Footer";
 import { sections } from "../../../src/constants";
 import { ArrowRightIcon } from "../../components/Icons";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { EffectFade, Mousewheel, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./home.scss";
+import { c } from "maath/dist/index-43782085.esm";
+
+const swiperOptions = {};
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState(1);
@@ -31,9 +34,21 @@ const Home = () => {
             noSwipingClass={{
               el: "no-swiper",
             }}
+            onSwiper={(swiper) => {
+              const items = document.querySelectorAll(
+                ".navbar-menu__item--link"
+              );
+              console.log(swiper);
+              for (let i = 0; i < items.length; i++) {
+                items[i].onclick = () => {
+                  swiper.slideTo(i);
+                };
+              }
+            }}
             onSlideChange={(index) => {
               const sectionLength = sections.length - 1;
-              if (index.activeIndex == sectionLength) {
+
+              if (index.activeIndex === sectionLength) {
                 console.log("Slide" + index.activeIndex);
                 setShowScrollRight(false);
               } else {
@@ -64,6 +79,16 @@ const Home = () => {
                     duration: 500,
                   }
                 );
+              }
+              const items = document.querySelectorAll(
+                ".navbar-menu__item--link"
+              );
+              for (let i = 0; i < items.length; i++) {
+                if (index.activeIndex === i) {
+                  items[i].classList.add("active");
+                } else {
+                  items[i].classList.remove("active");
+                }
               }
             }}
             speed={1000}

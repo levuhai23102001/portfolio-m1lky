@@ -1,9 +1,8 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-scroll";
 import { Link as SocialLink } from "react-router-dom";
-import { navLinks, socialLinks } from "../../../constants";
-import sound from "../../../assets/bg-sound.mp3";
-
+import { socialLinks } from "../../../constants";
+import { bgSound, gone, exil } from "../../../assets";
 import "./navbar.scss";
 
 const Navbar = () => {
@@ -32,18 +31,21 @@ const Navbar = () => {
       <nav className="m1lky-navbar navbar-fixed">
         <div className="navbar-wrapper">
           <ul className="navbar-menu">
-            {navLinks.map((link, index) => (
-              <li className="navbar-menu__item" key={index}>
-                <Link
-                  to={link.id}
-                  spy
-                  activeClass="active"
-                  className="navbar-menu__item--link"
-                >
-                  {link.title}
-                </Link>
-              </li>
-            ))}
+            <li className="navbar-menu__item">
+              <span className="navbar-menu__item--link active">Home</span>
+            </li>
+            <li className="navbar-menu__item">
+              <span className="navbar-menu__item--link">About</span>
+            </li>
+            <li className="navbar-menu__item">
+              <span className="navbar-menu__item--link">Skills</span>
+            </li>
+            <li className="navbar-menu__item">
+              <span className="navbar-menu__item--link">Projects</span>
+            </li>
+            <li className="navbar-menu__item">
+              <span className="navbar-menu__item--link">Contact</span>
+            </li>
           </ul>
           <div className="navbar-brand">
             <span className="navbar-brand__name" data-text="M 1 L K Y">
@@ -69,7 +71,7 @@ const Navbar = () => {
           </div>
           <audio
             ref={soundRef}
-            src={sound}
+            src={exil}
             onEnded={onEnded}
             className="sound-background"
           />

@@ -36,12 +36,12 @@
   z-index: 1;
   left: 50%;
   opacity: 1;
-  transition: opacity 0.3s linear;
+  transition: all 0.3s linear;
   transform: translateX(-50%);
   animation: bounce 3s ease infinite;
   &.hide {
     opacity: 0;
-    transition: 0.3s linear;
+    transition: all 0.3s linear;
   }
 }
 
