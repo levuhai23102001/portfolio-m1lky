@@ -5,9 +5,16 @@ import { socialLinks } from "../../../constants";
 import { bgSound, gone, exil } from "../../../assets";
 import "./navbar.scss";
 
+const sounds = [bgSound, gone, exil];
+
 const Navbar = () => {
   //State
   const [isPlay, setIsPlay] = useState(false);
+  const [sound, setSound] = useState(() => {
+    const random = Math.floor(Math.random() * sounds.length);
+    return sounds[random];
+  });
+  console.log(sound);
   //DOM
   const soundRef = useRef(null);
 
@@ -24,6 +31,10 @@ const Navbar = () => {
 
   const onEnded = () => {
     setIsPlay(false);
+    setSound(() => {
+      const newRandom = Math.floor(Math.random() * sounds.length);
+      return sounds[newRandom];
+    });
   };
 
   return (
@@ -71,7 +82,7 @@ const Navbar = () => {
           </div>
           <audio
             ref={soundRef}
-            src={exil}
+            src={sound}
             onEnded={onEnded}
             className="sound-background"
           />
