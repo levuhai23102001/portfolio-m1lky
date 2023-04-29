@@ -8,7 +8,7 @@
 - Make luv not war 💖💛🧡💚💙💜
 
 HOMEPAGE
-![image](https://user-images.githubusercontent.com/58142935/234130342-f38171e0-eb5e-4414-980c-45ebeb6420eb.png)
+![image](https://user-images.githubusercontent.com/58142935/235300496-601429d5-7dae-472d-bfa8-536430b8902a.png)
 
 ABOUT ME PAGE
 ![image](https://user-images.githubusercontent.com/58142935/234695515-f9588d43-b322-435d-941b-1572bd3685ae.png)
