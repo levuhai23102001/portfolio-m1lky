@@ -1,5 +1,18 @@
 @use "../../../../scss/" as *;
 
+.contact-section {
+  &.active {
+    .contact-content-left {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .contact-content-right {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
 .contact-container {
   position: relative;
   width: 100%;
@@ -17,11 +30,17 @@
   width: 50%;
   background-color: $secondBg-color;
   border-radius: 8px;
+  opacity: 0;
+  transform: translateY(-150px);
+  transition: transform 1s ease, opacity 1s ease;
   overflow: hidden;
 }
 
 .contact-content-right {
   width: 50%;
+  opacity: 0;
+  transform: translateX(-150px);
+  transition: transform 1s ease, opacity 1s ease;
   canvas {
     display: block;
     width: 100%;
