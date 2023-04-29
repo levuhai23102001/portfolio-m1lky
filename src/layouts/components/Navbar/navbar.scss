@@ -102,14 +102,15 @@
         transition: 0.3s ease-in-out;
       }
       &.active {
-        color: #ff3366;
+        text-shadow: 0 0 0.5rem $text-color;
         &::before {
           width: 100%;
           left: 0;
         }
       }
       &:hover {
-        color: #ff3366;
+        text-shadow: 0 0 0.5rem $text-color;
+        transition: 0.3s ease-in-out;
         &::before {
           width: 100%;
           left: 0;

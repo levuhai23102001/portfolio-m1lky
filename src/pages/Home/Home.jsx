@@ -40,6 +40,7 @@ const Home = () => {
               for (let i = 0; i < items.length; i++) {
                 items[i].onclick = () => {
                   swiper.slideTo(i);
+                  setActiveSection(swiper.activeIndex + 1);
                 };
               }
             }}
@@ -96,7 +97,7 @@ const Home = () => {
           >
             {sections.map((section, index) => (
               <SwiperSlide key={index} id={section.id}>
-                <div className="wrapper-content">{<section.component />}</div>
+                {({ isActive }) => <section.component isActive={isActive} />}
               </SwiperSlide>
             ))}
           </Swiper>

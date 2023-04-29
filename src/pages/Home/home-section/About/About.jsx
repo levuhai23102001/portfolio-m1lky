@@ -1,13 +1,15 @@
 import React from "react";
-
 import Card from "../../../../components/Card";
+import SectionWrapper from "../../../../layouts/components/Section/";
 import { overviewList } from "../../../../constants";
 import "./about.scss";
 
-const About = () => {
+const About = (props) => {
   return (
     <>
-      <section className="about" id="about">
+      <SectionWrapper
+        className={`about-section ${props.isActive ? "active" : ""}`}
+      >
         <div className="about-container">
           <div className="about-content-left">
             <div className="about-header">
@@ -31,7 +33,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </SectionWrapper>
     </>
   );
 };

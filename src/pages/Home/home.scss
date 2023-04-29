@@ -13,16 +13,15 @@
   padding: 0;
 }
 
-.wrapper-content {
+.section-wrapper {
   max-width: 1170px;
   margin: 0 auto;
 }
 
 .swiper-slide {
-  opacity: 0 !important;
+  visibility: hidden !important;
   &-active {
-    opacity: 1 !important;
-    z-index: 999 !important;
+    visibility: visible !important;
   }
 }
 
