@@ -1,12 +1,26 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
-import astronaut from "../../../../assets/whitebur.png";
+import { characterList } from "../../../../constants";
 import SectionWrapper from "../../../../layouts/components/Section";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import {} from "swiper";
+import SwiperCore, { Autoplay } from "swiper";
 import "swiper/css";
 import "./hero.scss";
+
+SwiperCore.use([Autoplay]);
+
+const swiperOptions = {
+  spaceBetween: 0,
+  centeredSlides: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  cssMode: true,
+  loop: true,
+  speed: 1000,
+};
 
 const Hero = (props) => {
   const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
@@ -87,7 +101,13 @@ const Hero = (props) => {
               </Sphere>
             </Suspense>
           </Canvas>
-          <img src={astronaut} alt="astronaut" />
+          <Swiper {...swiperOptions} className="mySwiperChildren">
+            {characterList.map((item, index) => (
+              <SwiperSlide key={index}>
+                <img src={item.img} alt={item.name} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </SectionWrapper>

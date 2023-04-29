@@ -74,6 +74,7 @@
 
 .hero-image {
   position: relative;
+  width: 50%;
   pointer-events: visible;
   overflow: visible;
   opacity: 0;
@@ -85,12 +86,27 @@
     height: 660px;
     touch-action: none;
   }
-  img {
+  .mySwiperChildren {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        opacity: 0;
+        transition: 0.5s ease;
+      }
+      &-active {
+        img {
+          opacity: 1;
+          transition: 0.5s ease;
+        }
+      }
+    }
   }
 }
