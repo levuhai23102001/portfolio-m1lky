@@ -11,7 +11,40 @@
   margin-bottom: 20px;
   background-color: $secondBg-color;
   border-radius: 4px;
-  border-bottom: 3px solid #fff;
+  &::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-size: 400% 400%;
+    background-image: linear-gradient(
+      -45deg,
+      #fc6c8f,
+      #ff2ced,
+      #ffb86c,
+      #2cccff,
+      #20e3b2,
+      #ffcc70,
+      #c850c0,
+      #4158d0
+    );
+    animation: gradient 7s ease-in-out alternate infinite;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 }
 
 .exp-card__logo {
@@ -41,10 +74,20 @@
 }
 
 .exp-card__header {
+  position: relative;
   .exp-card__title {
     font-size: 1.25em;
     font-weight: 700;
     color: $text-color;
+    margin-bottom: 5px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: -10px;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(to bottom, transparent, #c3a95a, transparent);
+    }
   }
   .exp-card__subtitle,
   .exp-card__date {
