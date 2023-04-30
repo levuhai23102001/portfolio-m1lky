@@ -7,6 +7,11 @@
     opacity: 0;
     transition: transform 0.5s ease, opacity 0.5s ease;
   }
+  .tech-ball__icon {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
   &.active {
     .skills-content-left-wrapper {
       .exp-card {
@@ -14,6 +19,18 @@
         transform: translateX(0);
         transition: transform 0.5s ease, opacity 0.5s ease;
         @for $i from 1 through 2 {
+          &:nth-child(#{$i}) {
+            transition-delay: #{math.div($i, 2)}s;
+          }
+        }
+      }
+    }
+    .skills-content-right {
+      .tech-ball__icon {
+        opacity: 1;
+        transform: translateY(0);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        @for $i from 1 through 12 {
           &:nth-child(#{$i}) {
             transition-delay: #{math.div($i, 2)}s;
           }

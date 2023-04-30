@@ -1,0 +1,12 @@
+.tech-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 15px;
+}
+
+.tech-ball__icon {
+  width: 100px;
+  height: 100px;
+}

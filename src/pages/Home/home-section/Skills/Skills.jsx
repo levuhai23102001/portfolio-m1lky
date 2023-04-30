@@ -1,6 +1,7 @@
 import React from "react";
 import SectionWrapper from "../../../../layouts/components/Section";
 import ExpCard from "./card-vertical/";
+import Tech from "./tech-canvas/";
 
 import { experiences } from "../../../../constants";
 
@@ -31,7 +32,9 @@ const Skills = (props) => {
               ))}
             </div>
           </div>
-          <div className="skills-content-right">Content Right</div>
+          <div className="skills-content-right">
+            <Tech />
+          </div>
         </div>
       </SectionWrapper>
     </>
