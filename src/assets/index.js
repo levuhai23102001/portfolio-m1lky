@@ -12,6 +12,10 @@ import bgSound from "./mp3/bg-sound.mp3";
 import gone from "./mp3/gone.mp3";
 import exil from "./mp3/exil.mp3";
 
+import meta from "./meta.png";
+import starbucks from "./starbucks.png";
+import tesla from "./tesla.png";
+
 export {
   web,
   mobile,
@@ -25,4 +29,7 @@ export {
   bgSound,
   gone,
   exil,
+  meta,
+  starbucks,
+  tesla,
 };
