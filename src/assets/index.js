@@ -29,6 +29,11 @@ import redux from "../assets/tech/redux.png";
 import tailwind from "../assets/tech/tailwind.png";
 import typescript from "../assets/tech/typescript.png";
 
+import portfolio from "../assets/projects/portfolio.png";
+import aniM1lky from "../assets/projects/Ani_m1lky.png";
+import blob from "../assets/projects/blob.png";
+import photoApp from "../assets/projects/photoApp.png";
+
 export {
   web,
   mobile,
@@ -57,4 +62,8 @@ export {
   redux,
   tailwind,
   typescript,
+  portfolio,
+  blob,
+  aniM1lky,
+  photoApp,
 };

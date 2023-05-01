@@ -38,6 +38,10 @@ import {
   redux,
   tailwind,
   typescript,
+  portfolio,
+  blob,
+  aniM1lky,
+  photoApp,
 } from "../assets";
 
 export const socialLinks = [
@@ -217,5 +221,40 @@ export const technologies = [
   {
     name: "docker",
     icon: docker,
+  },
+];
+
+export const projects = [
+  {
+    img: portfolio,
+    title: "M1LKY - Portfolio Website",
+    subtitle: "My Portfolio Website",
+    tags: [
+      "portfolio",
+      "threejs",
+      "reactjs",
+      "canvas",
+      "frame-motion",
+      "vitejs",
+      "threejs-fiber",
+    ],
+  },
+  {
+    img: aniM1lky,
+    title: "Ani - M1LKY",
+    subtitle: "Ani - M1LKY: Animes Website ReactJS",
+    tags: ["social-media", "anime", "reactjs", "webapp", "movie-app"],
+  },
+  {
+    img: blob,
+    title: "WebGL - Blob",
+    subtitle: "WebGL Blob using three/fiber",
+    tags: ["threejs-fiber", "threejs", "reactjs", "canvas"],
+  },
+  {
+    img: photoApp,
+    title: "PHOTOGRAPHY APPLICATION",
+    subtitle: "Basic Photo App ReactJS",
+    tags: ["reactjs", "redux", "redux-toolkit", "hooks", "react-router-dom"],
   },
 ];
