@@ -13,8 +13,10 @@ HOMEPAGE
 ABOUT ME PAGE
 ![image](https://user-images.githubusercontent.com/58142935/234695515-f9588d43-b322-435d-941b-1572bd3685ae.png)
 
+SKILLS PAGE
+![image](https://user-images.githubusercontent.com/58142935/235347330-3d6c266a-ee0a-4dc9-a883-c60e22889029.png)
+
 
 CONTACT PAGE
 ![image](https://user-images.githubusercontent.com/58142935/234419386-a7fef5a3-d969-4768-976a-3c126b581738.png)
 
-.
