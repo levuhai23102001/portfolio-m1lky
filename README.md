@@ -16,6 +16,8 @@ ABOUT ME PAGE
 SKILLS PAGE
 ![image](https://user-images.githubusercontent.com/58142935/235347330-3d6c266a-ee0a-4dc9-a883-c60e22889029.png)
 
+PROJECTS PAGE
+![image](https://user-images.githubusercontent.com/58142935/235411758-cf29dde3-a5a2-4c00-9080-f2342dc54dd0.png)
 
 CONTACT PAGE
 ![image](https://user-images.githubusercontent.com/58142935/234419386-a7fef5a3-d969-4768-976a-3c126b581738.png)
