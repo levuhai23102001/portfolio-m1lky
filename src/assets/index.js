@@ -32,7 +32,7 @@ import typescript from "../assets/tech/typescript.png";
 import portfolio from "../assets/projects/portfolio.png";
 import aniM1lky from "../assets/projects/Ani_m1lky.png";
 import blob from "../assets/projects/blob.png";
-import photoApp from "../assets/projects/photoApp.png";
+import valorant from "../assets/projects/valorant.png";
 
 export {
   web,
@@ -65,5 +65,5 @@ export {
   portfolio,
   blob,
   aniM1lky,
-  photoApp,
+  valorant,
 };

@@ -41,7 +41,7 @@ import {
   portfolio,
   blob,
   aniM1lky,
-  photoApp,
+  valorant,
 } from "../assets";
 
 export const socialLinks = [
@@ -240,6 +240,19 @@ export const projects = [
     ],
   },
   {
+    img: valorant,
+    title: "M 1 L K Y - Valorant Landing Page",
+    subtitle: "Valorant Landing Page - ReactJS",
+    tags: [
+      "reactjs",
+      "valorant",
+      "axios",
+      "swiper",
+      "react-router-dom-v6",
+      "landing-page",
+    ],
+  },
+  {
     img: aniM1lky,
     title: "Ani - M1LKY",
     subtitle: "Ani - M1LKY: Animes Website ReactJS",
@@ -250,11 +263,5 @@ export const projects = [
     title: "WebGL - Blob",
     subtitle: "WebGL Blob using three/fiber",
     tags: ["threejs-fiber", "threejs", "reactjs", "canvas"],
-  },
-  {
-    img: photoApp,
-    title: "PHOTOGRAPHY APPLICATION",
-    subtitle: "Basic Photo App ReactJS",
-    tags: ["reactjs", "redux", "redux-toolkit", "hooks", "react-router-dom"],
   },
 ];
